@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IPLStats – IPL Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="ipllogo.png" alt="IPLStats Logo" class="logo-img" />
+        IPLStats
+      </div>
+      <ul class="nav-links">
+        <li onclick="showPage('home')">Home</li>
+        <li onclick="showPage('teams')">Teams</li>
+        <li onclick="showPage('players')">Players</li>
+        <li onclick="showPage('matches')">Matches</li>
+        <li onclick="showPage('points')">Points Table</li>
+        <li onclick="showPage('about')">About</li>
+        <li onclick="showPage('contact')">Contact</li>
+      </ul>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <section id="home" class="page">
+      <h1>Welcome to IPLStats</h1>
+      <img src="iplbanner.jpg" alt="IPL Banner" class="hero-img" />
+      <p>Your one-stop platform for IPL teams, players, and match stats.</p>
+
+      <div class="highlight">
+        <h3>Upcoming Match</h3>
+        <p>CSK vs MI – 20 March 2026</p>
+      </div>
+    </section>
+
+    <!-- ===== TEAMS ===== -->
+    <section id="teams" class="page hidden">
+      <h2>IPL Teams</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="cskteam.jpg" alt="CSK" />
+          <h3>CSK</h3>
+          <p>Captain: MS Dhoni</p>
+          <p>Ground: Chennai</p>
+          <p>Titles: 5</p>
+        </div>
+
+        <div class="card">
+          <img src="mi.jpg" alt="MI" />
+          <h3>MI</h3>
+          <p>Captain: Rohit Sharma</p>
+          <p>Ground: Mumbai</p>
+          <p>Titles: 5</p>
+        </div>
+
+        <div class="card">
+          <img src="rcb.jpg" alt="RCB" />
+          <h3>RCB</h3>
+          <p>Captain: Virat Kohli</p>
+          <p>Ground: Bangalore</p>
+          <p>Titles: 0</p>
+        </div>
+
+        <div class="card">
+          <img src="kkr.jpg" alt="KKR" />
+          <h3>KKR</h3>
+          <p>Captain: Shreyas Iyer</p>
+          <p>Ground: Kolkata</p>
+          <p>Titles: 2</p>
+        </div>
+
+        <div class="card">
+          <img src="srh.jpg" alt="SRH" />
+          <h3>SRH</h3>
+          <p>Captain: Pat Cummins</p>
+          <p>Ground: Hyderabad</p>
+          <p>Titles: 1</p>
+        </div>
+
+        <div class="card">
+          <img src="rr.png" alt="RR" />
+          <h3>RR</h3>
+          <p>Captain: Sanju Samson</p>
+          <p>Ground: Jaipur</p>
+          <p>Titles: 1</p>
+        </div>
+
+        <div class="card">
+          <img src="dc.png" alt="DC" />
+          <h3>DC</h3>
+          <p>Captain: Rishabh Pant</p>
+          <p>Ground: Delhi</p>
+          <p>Titles: 0</p>
+        </div>
+
+        <div class="card">
+          <img src="pbks.jpg" alt="PBKS" />
+          <h3>PBKS</h3>
+          <p>Captain: Shikhar Dhawan</p>
+          <p>Ground: Mohali</p>
+          <p>Titles: 0</p>
+        </div>
+
+        <div class="card">
+          <img src="gt.jpg" alt="GT" />
+          <h3>GT</h3>
+          <p>Captain: Shubman Gill</p>
+          <p>Ground: Ahmedabad</p>
+          <p>Titles: 1</p>
+        </div>
+
+        <div class="card">
+          <img src="lsg.jpg" alt="LSG" />
+          <h3>LSG</h3>
+          <p>Captain: KL Rahul</p>
+          <p>Ground: Lucknow</p>
+          <p>Titles: 0</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATCHES ===== -->
+    <section id="matches" class="page hidden">
+      <h2>Match Schedule</h2>
+
+      <div class="match-card">
+        <img src="cskvsmi.jpg" alt="CSK vs MI" />
+        <p>CSK vs MI</p>
+        <p>20 Mar | Chennai | Upcoming</p>
+      </div>
+
+      <div class="match-card">
+        <img src="rcbvskkr.jpg" alt="RCB vs KKR" />
+        <p>RCB vs KKR</p>
+        <p>22 Mar | Bangalore | Upcoming</p>
+      </div>
+    </section>
+
+    <!-- ===== POINTS TABLE ===== -->
+    <section id="points" class="page hidden">
+      <h2>Points Table</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Matches</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSK</td>
+            <td>14</td>
+            <td>5</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>MI</td>
+            <td>14</td>
+            <td>5</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>KKR</td>
+            <td>14</td>
+            <td>2</td>
+            <td>12</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>SRH</td>
+            <td>14</td>
+            <td>1</td>
+            <td>13</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>RR</td>
+            <td>14</td>
+            <td>1</td>
+            <td>13</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>GT</td>
+            <td>14</td>
+            <td>1</td>
+            <td>13</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="page hidden">
+      <h2>About IPL</h2>
+      <img src="iplhistory.jpg" alt="IPL History" class="about-img" />
+      <p>
+        The Indian Premier League (IPL) is a professional T20 cricket league
+        started in 2008. It features franchise-based teams from Indian cities.
+      </p>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="page hidden">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2026 IPLStats</p>
+    </footer>
+
+    <!-- ===== PAGE SWITCH SCRIPT (ONLY NAVIGATION) ===== -->
+    <script>
+      function showPage(pageId) {
+        document
+          .querySelectorAll(".page")
+          .forEach((p) => p.classList.add("hidden"));
+        document.getElementById(pageId).classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>
